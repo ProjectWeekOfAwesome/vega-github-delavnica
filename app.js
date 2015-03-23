@@ -5,7 +5,8 @@ var friKatedreApp = angular.module('friKatedre', [
   'friKatedreCtrls'
 ]);
         
-friKatedreApp.config(['$routeProvider', function($routeProvider) {
+friKatedreApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+    $locationProvider.hashPrefix('!');
     $routeProvider
         .when('/', {
             controller: 'kazaloCtrl',
@@ -39,8 +40,12 @@ friKatedreApp.config(['$routeProvider', function($routeProvider) {
 }]);
 
 friKatedreApp.run( [ '$rootScope', '$location', function( $rootScope, $location ) {
-    $rootScope.isActive = function( url ) {
-        if ( $location.path().indexOf( url ) !== -1 ) return true;
+    $rootScope.isActive = function (url) {
+        if ($location.path().indexOf(url) !== -1) return true;
         else return false;
+    };
+    
+    $rootScope.setTile = function(title) {
+        $rootScope.title = title;
     };
 }]);
