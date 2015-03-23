@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 </head>
-<body>
-  <div class="page-header" style="margin: 10px 0px 10px;">
+<body style="width: 90%;margin: auto;">
+  <div class="page-header" style="margin: 10px 0px 0px;">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        <img src="img/LogoFRI.png" alt="FRI logo" style="height: 150px;" />
+        <img src="img/LogoFRI.png" alt="FRI logo" style="height: 150px;margin: auto;" />
       </div>
       <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9" style="vertical-align: middle;">
           <h1 style="margin-top: 70px;">Fakulteta za računalništvo in informatiko <small>Univerza v Ljubljani</small></h1>
@@ -27,12 +27,12 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#/programska-oprema">Programska oprema</a></li>
-          <li><a href="#/racunalniska-logika">Računalniška logika, sistemi, mreže</a></li>
-          <li><a href="#/informatika">Informatiko</a></li>
-          <li><a href="#/teoreticno-racunalnistvo">Teoretično računalništvo</a></li>
-          <li><a href="#/umetna-inteligenca">Umetna inteligenca</a></li>
-          <li><a href="#/matematika">Matematika in splošni predmeti</a></li>
+          <li ng-class="{ active: isActive('/programska-oprema') }"><a href="#/programska-oprema">Programska oprema</a></li>
+          <li ng-class="{ active: isActive('/racunalniska-logika') }"><a href="#/racunalniska-logika">Računalniška logika, sistemi, mreže</a></li>
+          <li ng-class="{ active: isActive('/informatika') }"><a href="#/informatika">Informatiko</a></li>
+          <li ng-class="{ active: isActive('/teoreticno-racunalnistvo') }"><a href="#/teoreticno-racunalnistvo">Teoretično računalništvo</a></li>
+          <li ng-class="{ active: isActive('/umetna-inteligenca') }"><a href="#/umetna-inteligenca">Umetna inteligenca</a></li>
+          <li ng-class="{ active: isActive('/matematika') }"><a href="#/matematika">Matematika in splošni predmeti</a></li>
         </ul>
       </div>
     </div>
