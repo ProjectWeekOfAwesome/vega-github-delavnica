@@ -11,27 +11,27 @@ friKatedreApp.config(['$routeProvider', function($routeProvider) {
             controller: 'kazaloCtrl',
             templateUrl: 'views/kazalo.html'
         })
-        .when('programska-oprema', {
+        .when('/programska-oprema', {
             controller: 'programskaOpremaCtrl',
             templateUrl: 'views/programskaOprema.html'
         })
-        .when('racunalniska-logika', {
+        .when('/racunalniska-logika', {
             controller: 'racunalniskaLogikaCtrl',
             templateUrl: 'views/racunalniskaLogika.html'
         })
-        .when('informatika', {
+        .when('/informatika', {
             controller: 'informatikaCtrl',
             templateUrl: 'views/informatika.html'
         })
-        .when('teoreticno-racunalnistvo', {
+        .when('/teoreticno-racunalnistvo', {
             controller: 'teoreticnoRacunalnistvoCtrl',
             templateUrl: 'views/teoreticnoRacunalnistvo.html'
         })
-        .when('umetna-inteligenca', {
+        .when('/umetna-inteligenca', {
             controller: 'umetnaInteligencaCtrl',
             templateUrl: 'views/umetnaInteligenca.html'
         })
-        .when('matematika', {
+        .when('/matematika', {
             controller: 'matematikaCtrl',
             templateUrl: 'views/matematika.html'
         })
