@@ -10,14 +10,23 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/programska-oprema">Katedra za programsko opremo</a></li>
-    <li><a href="#/racunalniska-logika">Katedra za računalniško logiko, sisteme, mreže</a></li>
-    <li><a href="#/informatika">Katedra za informatiko</a></li>
-    <li><a href="#/teoreticno-racunalnistvo">Katedra za teoretično računalništvo</a></li>
-    <li><a href="#/umetna-inteligenca">Katedra za umetno inteligenco</a></li>
-    <li><a href="#/matematika">Katedra za matematiko in splošne predmete</a></li>
-  </ul>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#/">FRI Katedre</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#/programska-oprema">Programska oprema</a></li>
+          <li><a href="#/racunalniska-logika">Računalniška logika, sistemi, mreže</a></li>
+          <li><a href="#/informatika">Informatiko</a></li>
+          <li><a href="#/teoreticno-racunalnistvo">Teoretično računalništvo</a></li>
+          <li><a href="#/umetna-inteligenca">Umetna inteligenca</a></li>
+          <li><a href="#/matematika">Matematika in splošni predmeti</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <div ng-view></div>
 
